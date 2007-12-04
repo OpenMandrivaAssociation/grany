@@ -1,6 +1,6 @@
 %define name grany
 %define version 2.0.0
-%define release 2mdk
+%define release  %mkrel 2
 %define summary The cellular automaton simulator
 
 Name: %{name}
