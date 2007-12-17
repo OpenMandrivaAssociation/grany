@@ -13,7 +13,6 @@ Source0: http://guillaume.cottenceau.free.fr/html/grany-resource/grany-%{version
 Source1: %{name}-pngicons.tar.bz2
 Patch0: grany-2.0.0-gcc34.patch.bz2
 URL: http://guillaume.cottenceau.free.fr/html/grany.html
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libgtkmm-devel
 
 %description
