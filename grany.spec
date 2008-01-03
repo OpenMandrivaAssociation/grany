@@ -32,10 +32,14 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << "EOF" > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): needs=X11 section=Applications/Sciences/Physics\
-  title="Grany" command="%{_bindir}/grany" icon="grany.png" longtitle="%{summary}"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Name=Grany
+Exec=%{_bindir}/grany
+Icon=grany
+Comment=%{summary}
 EOF
 
 # icons
@@ -60,8 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,0755)
 %doc README FAQ AUTHORS docs/BASICS docs/CUSTOMIZATION
 %{_bindir}/*
-%{_datadir}/%{name}
-%{_menudir}/%{name}
+#%{_datadir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_iconsdir}/*.png
 %{_iconsdir}/*/*.png
 
