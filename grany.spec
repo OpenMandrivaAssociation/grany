@@ -1,6 +1,6 @@
 %define name grany
 %define version 2.0.3
-%define release 1
+%define release 2
 %define summary The cellular automaton simulator
 
 Name: %{name}
