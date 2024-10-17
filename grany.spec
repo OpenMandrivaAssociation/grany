@@ -13,7 +13,7 @@ Source0: http://guillaume.cottenceau.free.fr/html/grany-resource/grany-%{version
 Source1: %{name}-pngicons.tar.bz2
 Source2:	.abf.yml
 Patch2:	grany-2.0.3-gettext.patch
-URL: http://guillaume.cottenceau.free.fr/html/grany.html
+URL: https://guillaume.cottenceau.free.fr/html/grany.html
 BuildRequires: pkgconfig(gtkmm-2.4)
 
 %description
