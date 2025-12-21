@@ -14,6 +14,11 @@ Source1: %{name}-pngicons.tar.bz2
 Source2:	.abf.yml
 Patch2:	grany-2.0.3-gettext.patch
 URL: https://guillaume.cottenceau.free.fr/html/grany.html
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(gtkmm-2.4)
 
 %description
